@@ -329,21 +329,19 @@ ul {
         margin-bottom: toRem(24);
       }
 
-      nav {
-        ul {
-          display: flex;
-          li {
-            & + li {
-              margin-left: toRem(32);
-            }
-            a {
-              font-family: "Alata";
-              font-style: normal;
-              font-weight: 400;
-              font-size: 15px;
-              line-height: 25px;
-              color: #ffffff;
-            }
+      ul {
+        display: flex;
+        li {
+          & + li {
+            margin-left: toRem(32);
+          }
+          a {
+            font-family: "Alata";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: #ffffff;
           }
         }
       }

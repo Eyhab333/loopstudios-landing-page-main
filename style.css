@@ -255,13 +255,13 @@ ul {
     width: 144px;
     margin-bottom: 1.5rem;
   }
-  footer .footer__logo-and-links nav ul {
+  footer .footer__logo-and-links ul {
     display: flex;
   }
-  footer .footer__logo-and-links nav ul li + li {
+  footer .footer__logo-and-links ul li + li {
     margin-left: 2rem;
   }
-  footer .footer__logo-and-links nav ul li a {
+  footer .footer__logo-and-links ul li a {
     font-family: "Alata";
     font-style: normal;
     font-weight: 400;
