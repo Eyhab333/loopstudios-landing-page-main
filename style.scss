@@ -1,0 +1,391 @@
+@import "function";
+
+// RESETS
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+// /* ####### */
+
+/*##### for-phone-only ##########*/
+@media (max-width: 599px) {
+}
+
+/*############ for-tablet-portrait-up ##############*/
+@media (min-width: 600px) {
+  // header ================================ header
+  header {
+    background: url(./images/desktop/image-hero.jpg), rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: toRem(64) toRem(165) toRem(146) toRem(165);
+
+    .logo-and-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: toRem(130);
+
+      .logo {
+        height: 32px;
+        width: 192px;
+      }
+
+      nav {
+        ul {
+          display: flex;
+          li {
+            & + li {
+              margin-left: toRem(30);
+            }
+            a {
+              font-family: "Alata";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 25px;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+
+    .text-hero {
+      width: toRem(650);
+      border: 2px solid #ffffff;
+      padding: toRem(40);
+
+      h1 {
+        font-family: "Josefin Sans";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 72px;
+        line-height: 70px;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+    }
+  }
+  // main ================================== main
+  main {
+    padding: toRem(160) toRem(162) toRem(184) toRem(164);
+
+    .the-leader {
+      display: flex;
+      position: relative;
+      margin-bottom: toRem(184);
+
+      .img {
+        height: 500px;
+        width: 731px;
+      }
+
+      .text {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: white;
+        max-width: toRem(541);
+        padding-top: toRem(96);
+        padding-left: toRem(96);
+        h2 {
+          font-family: "Josefin Sans";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 48px;
+          line-height: 48px;
+          text-transform: uppercase;
+          color: #000000;
+          margin-bottom: toRem(25);
+        }
+
+        p {
+          font-family: "Alata";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 25px;
+          color: #000000;
+          mix-blend-mode: normal;
+          opacity: 0.5;
+        }
+      }
+    }
+
+    .our-creations {
+      .head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: toRem(80);
+
+        h2 {
+          font-family: "Josefin Sans";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 48px;
+          line-height: 48px;
+          text-transform: uppercase;
+          color: #000000;
+        }
+
+        a {
+          font-family: "Alata";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 14px;
+          letter-spacing: 5px;
+          text-transform: uppercase;
+          color: #000000;
+          border: 1px solid #000000;
+          padding: toRem(13) toRem(43) toRem(13) toRem(38);
+        }
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: toRem(450) toRem(450);
+        gap: toRem(30);
+
+        .grid-item {
+          position: relative;
+
+          h3 {
+            position: absolute;
+            bottom: toRem(32);
+            left: toRem(40);
+            font-family: "Josefin Sans";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 32px;
+            line-height: 32px;
+            text-transform: uppercase;
+            color: #ffffff;
+          }
+        }
+
+        .deep-earth {
+          background: url(./images/desktop/image-deep-earth.jpg),
+            linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 0.0001) 0%,
+              rgba(0, 0, 0, 0.601863) 100%
+            );
+          background-blend-mode: overlay;
+        }
+        .night-arcade {
+          background: url(./images/desktop/image-night-arcade.jpg),
+            linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 0.0001) 0%,
+              rgba(0, 0, 0, 0.601863) 100%
+            );
+          background-blend-mode: overlay;
+        }
+        .soccer-team {
+          background: url(./images/desktop/image-soccer-team.jpg),
+            linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 0.0001) 0%,
+              rgba(0, 0, 0, 0.601863) 100%
+            );
+          background-blend-mode: overlay;
+        }
+        .image-the-grid {
+          background: url(./images/desktop/image-grid.jpg),
+            linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 0.0001) 0%,
+              rgba(0, 0, 0, 0.601863) 100%
+            );
+          background-blend-mode: overlay;
+        }
+        .from-above {
+          background: url(./images/desktop/image-from-above.jpg),
+            linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 0.0001) 0%,
+              rgba(0, 0, 0, 0.601863) 100%
+            );
+          background-blend-mode: overlay;
+        }
+        .pocket {
+          background: url(./images/desktop/image-pocket-borealis.jpg),
+            linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 0.0001) 0%,
+              rgba(0, 0, 0, 0.601863) 100%
+            );
+          background-blend-mode: overlay;
+        }
+        .curiosity {
+          background: url(./images/desktop/image-curiosity.jpg),
+            linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 0.0001) 0%,
+              rgba(0, 0, 0, 0.601863) 100%
+            );
+          background-blend-mode: overlay;
+        }
+        .fisheye {
+          background: url(./images/desktop/image-fisheye.jpg),
+            linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 0.0001) 0%,
+              rgba(0, 0, 0, 0.601863) 100%
+            );
+          background-blend-mode: overlay;
+        }
+      }
+    }
+  }
+  // footer ================================ footer
+  footer {
+    background: #000000;
+    padding: toRem(43) toRem(165);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .footer__logo-and-links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      .logo {
+        height: 24px;
+        width: 144px;
+        margin-bottom: toRem(24);
+      }
+
+      nav {
+        ul {
+          display: flex;
+          li {
+            & + li {
+              margin-left: toRem(32);
+            }
+            a {
+              font-family: "Alata";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 25px;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+
+    .social-media-and-rights {
+      .social-media {
+        margin-bottom: toRem(24);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .icon {
+          height: 24px;
+          width: 24px;
+          margin-left: toRem(16);
+        }
+      }
+
+      .rights {
+        p {
+          font-family: "Alata";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 25px;
+          color: #ffffff;
+          mix-blend-mode: normal;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+
+/*############ for-tablet-landscape-up #############*/
+@media (min-width: 900px) {
+}
+
+/*############ for-desktop-up ###########*/
+@media (min-width: 1200px) {
+}
+
+/*############ for-big-desktop-up ##########*/
+@media (min-width: 1800px) {
+}

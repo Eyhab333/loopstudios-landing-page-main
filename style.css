@@ -1,0 +1,296 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*##### for-phone-only ##########*/
+/*############ for-tablet-portrait-up ##############*/
+@media (min-width: 600px) {
+  header {
+    background: url(./images/desktop/image-hero.jpg), rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4rem 10.3125rem 9.125rem 10.3125rem;
+  }
+  header .logo-and-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8.125rem;
+  }
+  header .logo-and-nav .logo {
+    height: 32px;
+    width: 192px;
+  }
+  header .logo-and-nav nav ul {
+    display: flex;
+  }
+  header .logo-and-nav nav ul li + li {
+    margin-left: 1.875rem;
+  }
+  header .logo-and-nav nav ul li a {
+    font-family: "Alata";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+  }
+  header .text-hero {
+    width: 40.625rem;
+    border: 2px solid #ffffff;
+    padding: 2.5rem;
+  }
+  header .text-hero h1 {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  main {
+    padding: 10rem 10.125rem 11.5rem 10.25rem;
+  }
+  main .the-leader {
+    display: flex;
+    position: relative;
+    margin-bottom: 11.5rem;
+  }
+  main .the-leader .img {
+    height: 500px;
+    width: 731px;
+  }
+  main .the-leader .text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    max-width: 33.8125rem;
+    padding-top: 6rem;
+    padding-left: 6rem;
+  }
+  main .the-leader .text h2 {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 1.5625rem;
+  }
+  main .the-leader .text p {
+    font-family: "Alata";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  main .our-creations .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+  }
+  main .our-creations .head h2 {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  main .our-creations .head a {
+    font-family: "Alata";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 0.8125rem 2.6875rem 0.8125rem 2.375rem;
+  }
+  main .our-creations .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 28.125rem 28.125rem;
+    gap: 1.875rem;
+  }
+  main .our-creations .grid .grid-item {
+    position: relative;
+  }
+  main .our-creations .grid .grid-item h3 {
+    position: absolute;
+    bottom: 2rem;
+    left: 2.5rem;
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  main .our-creations .grid .deep-earth {
+    background: url(./images/desktop/image-deep-earth.jpg), linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.601863) 100%);
+    background-blend-mode: overlay;
+  }
+  main .our-creations .grid .night-arcade {
+    background: url(./images/desktop/image-night-arcade.jpg), linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.601863) 100%);
+    background-blend-mode: overlay;
+  }
+  main .our-creations .grid .soccer-team {
+    background: url(./images/desktop/image-soccer-team.jpg), linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.601863) 100%);
+    background-blend-mode: overlay;
+  }
+  main .our-creations .grid .image-the-grid {
+    background: url(./images/desktop/image-grid.jpg), linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.601863) 100%);
+    background-blend-mode: overlay;
+  }
+  main .our-creations .grid .from-above {
+    background: url(./images/desktop/image-from-above.jpg), linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.601863) 100%);
+    background-blend-mode: overlay;
+  }
+  main .our-creations .grid .pocket {
+    background: url(./images/desktop/image-pocket-borealis.jpg), linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.601863) 100%);
+    background-blend-mode: overlay;
+  }
+  main .our-creations .grid .curiosity {
+    background: url(./images/desktop/image-curiosity.jpg), linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.601863) 100%);
+    background-blend-mode: overlay;
+  }
+  main .our-creations .grid .fisheye {
+    background: url(./images/desktop/image-fisheye.jpg), linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.601863) 100%);
+    background-blend-mode: overlay;
+  }
+  footer {
+    background: #000000;
+    padding: 2.6875rem 10.3125rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .footer__logo-and-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  footer .footer__logo-and-links .logo {
+    height: 24px;
+    width: 144px;
+    margin-bottom: 1.5rem;
+  }
+  footer .footer__logo-and-links nav ul {
+    display: flex;
+  }
+  footer .footer__logo-and-links nav ul li + li {
+    margin-left: 2rem;
+  }
+  footer .footer__logo-and-links nav ul li a {
+    font-family: "Alata";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+  }
+  footer .social-media-and-rights .social-media {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  footer .social-media-and-rights .social-media .icon {
+    height: 24px;
+    width: 24px;
+    margin-left: 1rem;
+  }
+  footer .social-media-and-rights .rights p {
+    font-family: "Alata";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+}
+/*############ for-tablet-landscape-up #############*/
+/*############ for-desktop-up ###########*/
+/*############ for-big-desktop-up ##########*//*# sourceMappingURL=style.css.map */
