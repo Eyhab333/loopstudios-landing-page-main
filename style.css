@@ -69,6 +69,237 @@ ul {
 }
 
 /*##### for-phone-only ##########*/
+@media (max-width: 599px) {
+  header {
+    background: url(./images/mobile/image-hero.jpg), rgba(0, 0, 0, 0.4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2.5rem 1.5rem 14.1875rem 1.5rem;
+  }
+  header .logo-and-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10.1875rem;
+  }
+  header .logo-and-nav .logo {
+    height: 1.5rem;
+    width: 9rem;
+  }
+  header .logo-and-nav nav {
+    display: none;
+  }
+  header .logo-and-nav nav ul {
+    display: flex;
+  }
+  header .logo-and-nav nav ul li + li {
+    margin-left: 1.875rem;
+  }
+  header .logo-and-nav nav ul li a {
+    font-family: "Alata";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+  }
+  header .text-hero {
+    border: 2px solid #ffffff;
+    padding: 1.5rem;
+  }
+  header .text-hero h1 {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 2.375rem;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  main {
+    padding: 6rem 1.5rem 6rem 1.5rem;
+  }
+  main .the-leader {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6rem;
+  }
+  main .the-leader .img {
+    width: 20.4375rem;
+    margin-bottom: 3rem;
+  }
+  main .the-leader .text {
+    background-color: white;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  main .the-leader .text h2 {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  main .the-leader .text p {
+    font-family: "Alata";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    text-align: center;
+  }
+  main .our-creations .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+  main .our-creations .head h2 {
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 1.375rem;
+  }
+  main .our-creations .head a {
+    font-family: "Alata";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 0.8125rem 2.6875rem 0.8125rem 2.375rem;
+  }
+  main .our-creations .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  main .our-creations .grid .grid-item {
+    position: relative;
+    height: 7.5rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  main .our-creations .grid .grid-item h3 {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 1.25rem;
+    font-family: "Josefin Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  main .our-creations .grid .deep-earth {
+    background: url(./images/mobile/image-deep-earth.jpg), linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.601863) 100%);
+    background-blend-mode: overlay;
+  }
+  main .our-creations .grid .night-arcade {
+    background: url(./images/mobile/image-night-arcade.jpg), linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.601863) 100%);
+    background-blend-mode: overlay;
+  }
+  main .our-creations .grid .soccer-team {
+    background: url(./images/mobile/image-soccer-team.jpg), linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.601863) 100%);
+    background-blend-mode: overlay;
+  }
+  main .our-creations .grid .image-the-grid {
+    background: url(./images/mobile/image-grid.jpg), linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.601863) 100%);
+    background-blend-mode: overlay;
+  }
+  main .our-creations .grid .from-above {
+    background: url(./images/mobile/image-from-above.jpg), linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.601863) 100%);
+    background-blend-mode: overlay;
+  }
+  main .our-creations .grid .pocket {
+    background: url(./images/mobile/image-pocket-borealis.jpg), linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.601863) 100%);
+    background-blend-mode: overlay;
+  }
+  main .our-creations .grid .curiosity {
+    background: url(./images/mobile/image-curiosity.jpg), linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.601863) 100%);
+    background-blend-mode: overlay;
+  }
+  main .our-creations .grid .fisheye {
+    background: url(./images/mobile/image-fisheye.jpg), linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.601863) 100%);
+    background-blend-mode: overlay;
+  }
+  footer {
+    background: #000000;
+    padding: 2.6875rem 10.3125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .footer__logo-and-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .footer__logo-and-links .logo {
+    height: 24px;
+    width: 144px;
+    margin-bottom: 2rem;
+  }
+  footer .footer__logo-and-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  footer .footer__logo-and-links ul li a {
+    font-family: "Alata";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+  }
+  footer .social-media-and-rights .social-media {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .social-media-and-rights .social-media .icon {
+    height: 24px;
+    width: 24px;
+    margin-left: 1rem;
+  }
+  footer .social-media-and-rights .rights {
+    width: 100%;
+  }
+  footer .social-media-and-rights .rights p {
+    font-family: "Alata";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    text-align: center;
+  }
+}
 /*############ for-tablet-portrait-up ##############*/
 @media (min-width: 600px) {
   header {
