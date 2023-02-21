@@ -106,6 +106,7 @@ ul {
   header .text-hero {
     border: 2px solid #ffffff;
     padding: 1.5rem;
+    max-width: 20.4375rem;
   }
   header .text-hero h1 {
     font-family: "Josefin Sans";
